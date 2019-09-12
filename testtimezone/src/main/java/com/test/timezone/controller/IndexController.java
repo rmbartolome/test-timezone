@@ -22,6 +22,6 @@ public class IndexController {
 
     @PostMapping(value="/get")
     public String getTimeZone(@RequestParam String hour, @RequestParam String timezone) {
-        return timezoneServices.getTimeZone(hour,timezone).toString();
+        return timezoneServices.getTimeZone(hour,timezone);
     }
 }

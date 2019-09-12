@@ -8,9 +8,9 @@ import java.time.*;
 @Component
 public class TimezoneServices {
 
-    public TimeDTO getTimeZone(String hour, String timeZone){
+    public String getTimeZone(String hour, String timeZone){
 
-        return parseTime(hour,timeZone);
+        return parseTime(hour,timeZone).toString();
     }
 
     private TimeDTO parseTime(String hour, String timezone){
