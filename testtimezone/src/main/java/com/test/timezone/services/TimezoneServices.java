@@ -9,12 +9,10 @@ import java.time.*;
 public class TimezoneServices {
 
     public String getTimeZone(String hour, String timeZone){
-
         return parseTime(hour,timeZone).toString();
     }
 
     private TimeDTO parseTime(String hour, String timezone){
-
         LocalTime time
                 = LocalTime.parse(hour);
         LocalDateTime localDateTime = LocalDateTime.of(LocalDate.now(),time);
