@@ -28,9 +28,8 @@ public class TimeDTO {
 
     @Override
     public String toString() {
-        return "{  \"response\":{" +
-                "\"time\":'" + time + '\'' +
-                ", \"timezone\":'" + timezone + '\'' +
-                '}';
+        return "{  \n\t\"response\":{" +
+                "\n\t\t\"time\":\"" + time + "\"" +
+                ", \n\t\t \"timezone\":\"" + timezone + "\" \n\t} \n }";
     }
 }
